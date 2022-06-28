@@ -23,12 +23,12 @@
             <h2><?php echo $movie->title; ?></h2>
             <h5><?php echo $movie->actor; ?></h5>
             <span><?php echo $movie->director; ?></span>
-            <p>Anno:<?php echo $movie->year; ?></p>
+            <p>Anno: <?php echo $movie->year; ?></p>
             <?php 
                 $anno = $movie->getYear();
                 if ($anno) {
             ?>
-            <strong><?php echo $anno; ?></strong>
+            <p>Anno +10: <strong><?php echo $anno; ?></strong></p>
             <?php } ?>
         </li>
         <?php } ?>
